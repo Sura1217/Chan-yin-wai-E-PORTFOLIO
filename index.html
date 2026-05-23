@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chan Yin Wai - Professional E-Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=qdSTq5X8ClL9M1Ti0QdJKBY9jKcCkwUpP1I6AWt4sZPG0M5uxtsdzJpGVVp37ZO_OC_PrpTg0uYtkEGzRX76NBCNqGAjd09Vd4k-mtDnaGrBGWXvxZg_F3-2gUZRFJH_snOsD5zF0z8kR3c-8gS1S-CX2IJcbUR5WHY7tdc_f4m9ouSVjY8Pr9tKEfM8nQ0GISvq2bBezi81lYKo3WbrmXxB-izMEK2nwSqpGFVqds1y31az-UOfcipbEWhrqFN1fhozNf1cAE_h_bJ1NwufJHKp8TFVvHtgWgHMo-92HT4" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9jZG4uZGlzY29yZGFwcC5jb20vYXR0YWNobWVudHMvMTUwNjIzNzI4OTAzNzE2ODgwMC8xNTA3ODE3MTAzNzQ1NDgyODE0L3BvcnRmb2xpby1maW5hbC5odG1sP2V4PTZhMTM0NzliJmlzPTZhMTFmNjFiJmhtPWYwZmUwYzliNDVmMDVmOGRlOTk0NDRiYTU5MWM5NzBjZWNhODJkMWQwOWVhZjZmNzQ2MWQxYThlMmI3MDRmNDgm"/><style>
+        /* --- Base & Reset --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Calibri, Arial, sans-serif;
+            background-color: #f6f9fc;
+            color: #2d3748;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        /* --- Navigation Bar --- */
+        header {
+            background-color: rgba(26, 54, 93, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        nav {
+            max-width: 1050px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+        nav .logo {
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.25rem;
+            letter-spacing: 1px;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+        nav ul li a {
+            color: #e2e8f0;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            padding: 6px 12px;
+            border-radius: 20px;
+        }
+        nav ul li a:hover {
+            color: #fff;
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        /* --- Hero Banner Section --- */
+        .hero-section {
+            background: linear-gradient(135deg, #1a365d, #2b6cb0);
+            padding: 140px 20px 60px 20px;
+            color: white;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+        .hero-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+        .hero-text {
+            text-align: left;
+            flex: 1;
+        }
+        .hero-text h1 {
+            font-size: 2.8rem;
+            letter-spacing: 1px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.15);
+        }
+        .hero-text h2 {
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: #90cdf4;
+            margin-bottom: 15px;
+        }
+        .hero-tagline {
+            font-size: 1.1rem;
+            color: #e2e8f0;
+            max-width: 600px;
+        }
+        .profile-wrapper {
+            position: relative;
+        }
+        .profile-img-container {
+            width: 160px;
+            height: 195px;
+            border: 4px solid rgba(255, 255, 255, 0.9);
+            border-radius: 24px;
+            overflow: hidden;
+            background-color: #edf2f7;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+            transition: transform 0.4s ease;
+        }
+        .profile-img-container:hover {
+            transform: scale(1.04) rotate(1deg);
+        }
+        .profile-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* --- Scroll Animations --- */
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+        .reveal-fade {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+        .active {
+            opacity: 1;
+            transform: translate(0);
+        }
+
+        /* --- Layout Cards --- */
+        section {
+            padding: 35px 0;
+            scroll-margin-top: 90px;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            color: #1a365d;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 600;
+        }
+        .section-title i {
+            color: #3182ce;
+            background: #ebf8ff;
+            padding: 10px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+        }
+        .card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            margin-bottom: 25px;
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1.8fr 1.2fr;
+            gap: 25px;
+        }
+        @media (max-width: 768px) {
+            .grid-2 { grid-template-columns: 1fr; }
+            .hero-container { flex-direction: column-reverse; text-align: center; gap: 20px; }
+            .hero-text { text-align: center; }
+        }
+
+        .contact-list {
+            list-style: none;
+        }
+        .contact-list li {
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 14px;
+            background: #f7fafc;
+            border-radius: 12px;
+        }
+        .contact-list i {
+            color: #3182ce;
+        }
+
+        /* --- 微調後精緻置中 3D 方塊（Centered and Resized 3D Cube） --- */
+        /* 外層控制箱：利用 display: flex 實現完美水平及垂直置中 */
+        .skills-wrapper-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px 0;
+        }
+        /* 觀測舞台：縮小寬度（由 550px 縮減至 360px）及高度，優化精緻度 */
+        .scene3d {
+            width: 100%;
+            max-width: 360px; 
+            height: 95px;
+            perspective: 1000px; /* 維持黃金立體透視 */
+        }
+        .cube3d {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .cube-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            padding: 15px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
+            border-left: 5px solid #3182ce; /* 保留截圖標誌性左側藍條 */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            backface-visibility: hidden;
+        }
+        /* 💡 3D 核心推移距離修正：由於面寬度縮小至 360px，Z軸前推距離同步精準調校為 180px (360/2) */
+        .face-front  { transform: rotateY(0deg) translateZ(180px); }
+        .face-right  { transform: rotateY(90deg) translateZ(180px); }
+        .face-back   { transform: rotateY(180deg) translateZ(180px); }
+        .face-left   { transform: rotateY(-90deg) translateZ(180px); }
+
+        /* 流動裝置自適應：寬度降至 280px 時，Z軸推移同步微調至 140px，確保不穿幫 */
+        @media (max-width: 480px) {
+            .scene3d { max-width: 280px; height: 105px; }
+            .face-front { transform: rotateY(0deg) translateZ(140px); }
+            .face-right { transform: rotateY(90deg) translateZ(140px); }
+            .face-back  { transform: rotateY(180deg) translateZ(140px); }
+            .face-left  { transform: rotateY(-90deg) translateZ(140px); }
+        }
+
+        .skill-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: #2d3748;
+        }
+        .flag-icon { font-size: 1.15rem; }
+        .stars { color: #ecc94b; font-size: 1.05rem; letter-spacing: 2px; }
+
+        /* --- Experience Timeline --- */
+        .timeline-container {
+            position: relative;
+            padding-left: 10px;
+        }
+        .timeline-item {
+            border-left: 3px solid #e2e8f0;
+            padding-left: 25px;
+            position: relative;
+            padding-bottom: 30px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 6px;
+            width: 13px;
+            height: 13px;
+            background-color: #3182ce;
+            border: 3px solid #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2);
+        }
+        .time-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 8px;
+        }
+        .time-header h3 { color: #1a365d; font-size: 1.15rem; }
+        .time-tag {
+            background: #ebf8ff;
+            color: #2b6cb0;
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        .timeline-item ul { margin-left: 20px; color: #4a5568; }
+        .timeline-item li { margin-bottom: 5px; }
+
+        /* --- Academic Projects Display --- */
+        .projects-wrapper {
+            background-color: #f0f4f8; 
+            border-radius: 24px;
+            padding: 30px;
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            margin-top: 15px;
+        }
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            gap: 20px;
+        }
+        .project-card {
+            min-width: calc(33.333% - 14px);
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+        }
+        @media (max-width: 768px) {
+            .project-card { min-width: 100%; }
+        }
+        .project-img {
+            height: 150px;
+            overflow: hidden;
+            background-color: #edf2f7;
+        }
+        .project-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .project-card:hover .project-img img {
+            transform: scale(1.08);
+        }
+        .project-info { padding: 20px; }
+        .project-info h4 { color: #1a365d; margin-bottom: 8px; font-size: 1.05rem; }
+        .project-info p { font-size: 0.88rem; color: #556275; line-height: 1.5; }
+        
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(26, 54, 93, 0.85);
+            color: white;
+            border: none;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-left { left: -10px; }
+        .btn-right { right: -10px; }
+
+        /* --- Career Goals Roadmap --- */
+        .career-statement-box {
+            background: linear-gradient(to right, #ebf8ff, #fff);
+            border-left: 5px solid #3182ce;
+            padding: 20px 25px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        .steps-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .steps-container { grid-template-columns: 1fr; }
+        }
+        .step-block {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            border-radius: 20px;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            transition: all 0.3s;
+        }
+        .step-block:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(49, 130, 206, 0.08);
+            border-color: #3182ce;
+        }
+        .step-number {
+            background: #3182ce;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        .step-block h4 { color: #1a365d; font-size: 1.05rem; font-weight: 600; }
+        .step-block p { font-size: 0.88rem; color: #4a5568; line-height: 1.6; }
+        .skills-to-learn { margin-top: 25px; padding-top: 20px; border-top: 1px dashed #e2e8f0; }
+
+        footer {
+            background-color: #1a365d; color: #a0aec0; text-align: center; padding: 25px; margin-top: 50px; font-size: 0.9rem; border-top-left-radius: 20px; border-top-right-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">E-PORTFOLIO</div>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#career">Career Plan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero-section">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>CHAN YIN WAI</h1>
+                <h2>陳彥瑋</h2>
+                <p class="hero-tagline">Computer & Electronic Engineering | Network & Hardware Infrastructure</p>
+            </div>
+            <div class="profile-wrapper">
+                <div class="profile-img-container">
+                    <img src="https://github.com/Sura1217/my-images/blob/main/Chan%20Yin%20Wai.png?raw=true" alt="Chan Yin Wai Professional Photo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <section id="about">
+            <div class="grid-2">
+                <div class="card reveal-left">
+                    <h2 class="section-title"><i class="fa-solid fa-user"></i> About Me</h2>
+                    <div class="reveal-fade" style="transition-delay: 0.2s;">
+                        <p>I am a motivated student pursuing a <strong>Higher Diploma in Computer and Electronic Engineering</strong> at the Hong Kong Institute of Vocational Education (IVE). With a solid foundation in electronics troubleshooting, hardware testing, and network configuration, I possess practical hands-on experience working as a technician in industry-leading environments. I am passionate about applying my technical competencies to solve real-world engineering problems and drive technological efficiency.</p>
+                    </div>
+                    <br>
+                    <div class="reveal-fade" style="transition-delay: 0.5s;">
+                        <p><strong>Education:</strong></p>
+                        <p>• Higher Diploma in Computer and Electronic Engineering | IVE (08/2024 – 05/2026) — CGPA Score: 2.58</p>
+                        <p>• Diploma of Vocational Education (Computer and Electronic Engineering) | Youth College (09/2022 – 06/2024) — AMA: P</p>
+                    </div>
+                </div>
+                <div class="card reveal-fade" style="transition-delay: 0.3s;">
+                    <h2 class="section-title"><i class="fa-solid fa-address-book"></i> Contact Info</h2>
+                    <ul class="contact-list">
+                        <li><i class="fa-solid fa-phone"></i> +852 95789608</li>
+                        <li><i class="fa-solid fa-envelope"></i> bosco20061217@gmail.com</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Flat H, 33/F, Block 11, Grandeur Terrace, Tin Shui Road, Tin Shui Wai</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="card reveal-fade">
+                <h2 class="section-title"><i class="fa-solid fa-square-poll-vertical"></i> Core Competencies</h2>
+                
+                <div class="skills-wrapper-box">
+                    <div class="scene3d">
+                        <div class="cube3d" id="cube">
+                            
+                            <div class="cube-face face-front">
+                                <div class="skill-header"><span>Microsoft Office</span> <span class="flag-icon">🇭🇰</span></div>
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            </div>
+
+                            <div class="cube-face face-right">
+                                <div class="skill-header"><span>Communication skills</span> <span class="flag-icon">🇭🇰</span></div>
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                            </div>
+
+                            <div class="cube-face face-back">
+                                <div class="skill-header"><span>Electronics Repair</span> <span class="flag-icon">🇺🇸</span></div>
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                            </div>
+
+                            <div class="cube-face face-left">
+                                <div class="skill-header"><span>Network Config</span> <span class="flag-icon">🇺🇸</span></div>
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <br>
+                <p style="font-size: 0.95rem; color: #2d3748; font-weight: 500;">
+                    <strong>Languages:</strong> Cantonese (Native) | Mandarin (Fluent) | English (Normal)
+                </p>
+            </div>
+        </section>
+
+        <section id="experience">
+            <div class="card reveal-fade">
+                <h2 class="section-title"><i class="fa-solid fa-business-time"></i> Professional Experience</h2>
+                <div class="timeline-container">
+                    
+                    <div class="timeline-item reveal-fade" style="transition-delay: 0.1s;">
+                        <div class="time-header">
+                            <h3>Technician | Ricoh Hong Kong Limited</h3>
+                            <span class="time-tag">28/7/2025 - present</span>
+                        </div>
+                        <ul>
+                            <li>Printer hardware testing and troubleshooting.</li>
+                            <li>Repair and replacement of photosensitive drum, heating assembly, and paper feed system.</li>
+                            <li>Driver installation, network connection setup, and firmware updates.</li>
+                            <li>Customer communication and repair report writing.</li>
+                            <li><strong>Specific tasks and achievements:</strong> Processing 5+ printer repair requests daily, with an average repair time of 55 minutes.</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item reveal-fade" style="transition-delay: 0.3s;">
+                        <div class="time-header">
+                            <h3>Student Helper | VTC Skills Fiesta 2025</h3>
+                            <span class="time-tag">26/10/2026</span>
+                        </div>
+                        <ul>
+                            <li>Onsite support during event coordination.</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item reveal-fade" style="transition-delay: 0.5s;">
+                        <div class="time-header">
+                            <h3>Student Helper | Hong Kong Science 2024 Innocarnival</h3>
+                            <span class="time-tag">27/10/2024</span>
+                        </div>
+                        <ul>
+                            <li>Provided onsite support and operation maintenance.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="projects-wrapper reveal-fade">
+                <h2 class="section-title" style="margin-bottom: 10px;"><i class="fa-solid fa-microchip"></i> Academic Projects</h2>
+                <p style="color: #718096; font-size: 0.95rem; margin-bottom: 20px; padding-left: 5px;">Showcase of curriculum laboratory projects matching required technical descriptions.</p>
+                
+                <div style="position: relative;">
+                    <button class="carousel-btn btn-left" onclick="moveCarousel(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="carousel-btn btn-right" onclick="moveCarousel(1)"><i class="fa-solid fa-chevron-right"></i></button>
+
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="track">
+                            
+                            <div class="project-card">
+                                <div class="project-img">
+                                    <img src="https://www.fbponline.com/wp-content/uploads/2021/06/How-Much-Does-a-Ricoh-Copier-Cost.jpg" alt="AI Printer Assistant">
+                                </div>
+                                <div class="project-info">
+                                    <h4>AI Printer Assistant</h4>
+                                    <p>Automated troubleshooting assistant designed for hardware diagnostic tracking.</p>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div class="project-img">
+                                    <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/6d39760b-6505-4190-95b3-cdb9c8c877f3.__CR956,0,1200,900_PT0_SX600_V1___.jpg" alt="Electronic Prototype">
+                                </div>
+                                <div class="project-info">
+                                    <h4>Electronic Prototype</h4>
+                                    <p>Microcontroller-based circuit project for sensory data processing.</p>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div class="project-img">
+                                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=400" alt="Network Infrastructure">
+                                </div>
+                                <div class="project-info">
+                                    <h4>Network Infrastructure</h4>
+                                    <p>Simulation of corporate local area network (LAN) routing setup.</p>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div class="project-img">
+                                    <img src="https://i.ytimg.com/vi/cWFKYSG9KG8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBDximXym9E-JL_Goa9qfbUlFKl0Q" alt="Smart Gateway">
+                                </div>
+                                <div class="project-info">
+                                    <h4>Smart Home Gateway</h4>
+                                    <p>Integrated lab project linking sensors to cloud reporting tools.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="career">
+            <div class="card reveal-fade">
+                <h2 class="section-title"><i class="fa-solid fa-bullseye"></i> Career Goal & Future Trajectory</h2>
+                
+                <div class="career-statement-box">
+                    <h3 style="color: #1a365d; margin-bottom: 8px; font-size: 1.2rem;">Career Goal Statement</h3>
+                    <p style="font-size: 1rem; color: #2d3748;">
+                        My short-term career goal is to secure a position as a <strong>Network Engineer or Hardware System Specialist</strong>. In the long term, I aim to become a <strong>Cloud & Infrastructure Architect</strong>, designing scalable, secure IT infrastructures to support business innovation.
+                    </p>
+                </div>
+
+                <h3 style="color: #1a365d; font-size: 1.15rem; margin-top: 10px;">Actionable Steps to Reach the Goal</h3>
+                
+                <div class="steps-container">
+                    <div class="step-block reveal-fade" style="transition-delay: 0.1s;">
+                        <div class="step-number">1</div>
+                        <h4>Education & Professional Certifications</h4>
+                        <p>Pursuing a Bachelor’s degree in Computer/Electronic Engineering. Studying for the Cisco Certified Network Associate (CCNA) and AWS Certified Solutions Architect certifications.</p>
+                    </div>
+                    
+                    <div class="step-block reveal-fade" style="transition-delay: 0.3s;">
+                        <div class="step-number">2</div>
+                        <h4>Relevant Work Experience</h4>
+                        <p>Gain deeper enterprise tech exposure through expanding technical scope at Ricoh and applying for cloud support internships.</p>
+                    </div>
+                    
+                    <div class="step-block reveal-fade" style="transition-delay: 0.5s;">
+                        <div class="step-number">3</div>
+                        <h4>Industry Networking</h4>
+                        <p>Join engineering professional bodies such as the HKIE (Hong Kong Institution of Engineers) as a student member to seek mentorship.</p>
+                    </div>
+                </div>
+
+                <div class="skills-to-learn">
+                    <h4 style="color: #1a365d; margin-bottom: 10px;">Necessary Skills to Learn</h4>
+                    <p style="font-size: 0.95rem; color: #4a5568; line-height: 1.8;">
+                        • Cloud Infrastructure Deployment (AWS / Azure)<br>
+                        • Advanced Routing & Network Security Protocols<br>
+                        • Automation Programming & Scripting (Python / Linux Bash)
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Chan Yin Wai. Portfolio Framework for Academic Submission.</p>
+    </footer>
+
+    <script>
+        // Scroll 偵測引擎
+        function revealElements() {
+            const reveals = document.querySelectorAll('.reveal-left, .reveal-fade');
+            const windowHeight = window.innerHeight;
+            reveals.forEach(element => {
+                if (element.getBoundingClientRect().top < windowHeight - 80) {
+                    element.classList.add('active');
+                }
+            });
+        }
+        window.addEventListener('scroll', revealElements);
+        window.addEventListener('load', () => { setTimeout(revealElements, 100); });
+
+        // Projects 輪播滑動
+        let projectIndex = 0;
+        function moveCarousel(direction) {
+            const track = document.getElementById('track');
+            const cards = document.querySelectorAll('.project-card');
+            let cardsVisible = window.innerWidth > 768 ? 3 : 1;
+            let maxIndex = cards.length - cardsVisible;
+            projectIndex += direction;
+            if (projectIndex < 0) projectIndex = 0;
+            else if (projectIndex > maxIndex) projectIndex = maxIndex;
+            const cardWidth = cards[0].getBoundingClientRect().width;
+            track.style.transform = 'translateX(-' + (projectIndex * (cardWidth + 20)) + 'px)';
+        }
+
+        // 3D 立體方塊自動旋轉驅動（每 2 秒轉動 90 度）
+        let cubeRotationAngle = 0;
+        const cubeElement = document.getElementById('cube');
+
+        function rotate3dCube() {
+            cubeRotationAngle -= 90;
+            cubeElement.style.transform = `rotateY(${cubeRotationAngle}deg)`;
+        }
+        setInterval(rotate3dCube, 2000);
+    </script>
+</body>
+</html>
